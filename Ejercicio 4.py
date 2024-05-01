@@ -1,18 +1,15 @@
-persona = {}
-nombre = input("Ingrese el nombre: ")
-persona["Nombre"] = nombre
-print(persona)
-edad = input("Ingrese la edad: ")
-persona["Edad"] = edad
-print(persona)
-sexo = input("Ingrese el sexo: ")
-persona["Sexo"] = sexo
-print(persona)
-telefono = input("Ingrese el teléfono: ")
-persona["Teléfono"] = telefono
-print(persona)
-correo = input("Ingrese el correo electrónico: ")
-persona["Correo Electrónico"] = correo
-print(persona)
-print("Información completa de la persona:")
-print(persona)
+informacion = {}
+bandera = 1
+while bandera == 1:
+    dato = str(input("Que informacion vas a agregar?(nombre, edad, sexo, teléfono, correo electrónico, etc.)\n"))
+    dato = dato.lower()
+    valor = str(input("Escribe el dato:\n"))
+
+    informacion[dato] = valor
+
+    print(informacion)
+
+    print("Quieres seguir ejecutando el programa?\n Presiona 1 de lo contrario presiona 2")
+    bandera = int(input())
+
+print("FIN")

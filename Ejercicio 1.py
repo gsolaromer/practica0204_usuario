@@ -1,10 +1,9 @@
-diccionario = {'Euro':'€','Dollar':'$','Yen':'¥'}
-divisa = input('Introduce una divisa ')
-if divisa == "euro":
-     print (f"Tu divisa es {diccionario['Euro']}")
-elif divisa == "dollar":
-     print (f"Tu divisa es {diccionario['Dollar']}")
-elif divisa == "yen":
-     print (f"Tu divisa es {diccionario['Yen']}")
+divisas = {'Euro':'€', 'Dollar':'$', 'Yen':'¥'}
+
+opcion = str(input("Que divisa deseas visualizar?\n"))
+opcion = opcion.title()
+
+if opcion in divisas:
+    print(divisas[opcion])
 else:
-    print("Inserte una divisa, la de leer se la sabe?")
+    print("No se encontro la divisa :(")
